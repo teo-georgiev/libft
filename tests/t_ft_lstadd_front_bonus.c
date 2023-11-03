@@ -34,7 +34,7 @@ void	t_ft_lstadd_front(void)
 	ft_lstadd_front(&root, node0);
 	while (root)
 	{
-		printf("%s\n", root->content);
+		printf("%s\n", (char *)root->content);
 		root = root->next;
 	}
 }

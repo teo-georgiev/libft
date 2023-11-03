@@ -1,0 +1,7 @@
+>> ft_atoi, need to change the negative minimum
+>> calloc - unnecessary var
+>> ft_lstdelone - unnecessary var
+same with lstmap_bonus, split and striteri
+add colour to tests with \033[1;<color code>m
+check if I could make color code functions that would be easier to call
+

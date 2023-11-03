@@ -36,5 +36,5 @@ void	t_ft_lstlast(void)
     ft_lstadd_front(&root, node0);
 
 	new_node = ft_lstlast(root);
-    printf("%s\n", new_node->content);
+    printf("%s\n", (char *)new_node->content);
 }

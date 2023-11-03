@@ -59,7 +59,7 @@ void	t_ft_lastmap(void)
 	root_new = ft_lstmap(root, &f_str_toupper, free_content);
 	while (root_new)
 	{
-		printf("%s\n", root_new->content);
+		printf("%s\n", (char *)root_new->content);
 		root_new = root_new->next;
 	}
 }

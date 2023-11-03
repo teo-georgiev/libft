@@ -21,7 +21,9 @@ static void tests_char(char f_name[], int *test, int (f)(int), int (f_lib)(int))
 
 void t_ft_checkchar(void)
 {
-	int     charset[] = {'a', 'A', '9', '/', 200, -1, '\0'};
+	int     charset[] = {
+		'a', 'A', '9', '/', 200, -1, 2147483647, '\0'
+		};
 
 	tests_char("ft_isalpha", charset, &ft_isalpha, &isalpha);
     tests_char("ft_isdigit", charset, &ft_isdigit, &isdigit);

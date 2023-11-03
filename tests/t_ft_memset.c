@@ -13,11 +13,11 @@ void	t_ft_memset(void)
     else
         printf(">>>> OK\n");
 
-    printf("\tlib memset:\t\t%s\n", memset(str_lib, c, len));
+    printf("\tlib memset:\t\t%s\n", (char *)memset(str_lib, c, len));
     printf("\tstr_lib addr:\t\t%p\n", str_lib);
     printf("\treturn addr:\t\t%p\n\n", memset(str_lib, c, len));
 
-    printf("\tft_memset:\t\t%s\n", ft_memset(str_ft, c, len));
+    printf("\tft_memset:\t\t%s\n", (char *)ft_memset(str_ft, c, len));
     printf("\tstr_ft addr:\t\t%p\n", str_ft);
     printf("\treturn addr:\t\t%p\n\n", ft_memset(str_ft, c, len));
 }

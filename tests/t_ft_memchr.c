@@ -16,6 +16,6 @@ void	t_ft_memchr(void)
         printf("<<<< KO\n");
     else
         printf(">>>> OK\n");
-    printf("\tLib:\t\t%s\n", memchr(str_lib, c, sizeof(str_lib)));
-    printf("\tFt:\t\t%s\n", ft_memchr(str_ft, c, sizeof(str_ft)));
+    printf("\tLib:\t\t%s\n", (char *)memchr(str_lib, c, sizeof(str_lib)));
+    printf("\tFt:\t\t%s\n", (char *)ft_memchr(str_ft, c, sizeof(str_ft)));
 }

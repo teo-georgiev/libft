@@ -15,11 +15,9 @@
 
 static char	*arr_dup(char const *s, char c)
 {
-	size_t	i;
 	size_t	j;
 	char	*new_s;
 
-	i = 0;
 	j = 0;
 	while (s[j] && s[j] != c)
 		j++;

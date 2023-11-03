@@ -40,7 +40,7 @@ void	t_ft_lstdelone(void)
     ft_lstadd_back(&root, node2);
     ft_lstadd_back(&root, node3);
 
-    printf("%s\n", node0->content);
+    printf("%s\n", (char *)node0->content);
     printf("%p\n\n", node0->next);
     ft_lstdelone(node0, &free_content);
 }

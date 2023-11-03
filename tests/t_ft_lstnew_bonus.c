@@ -20,6 +20,9 @@ void	t_ft_lstnew(void)
 
 	elem_s = ft_lstnew(&s);
 	elem_i = ft_lstnew(&i);
-	printf("\tStr content\t\t%s\n", elem_s->content);
-	printf("\tInt content\t\t%c\n", (char)elem_s->content);
+	printf("\tStr content\t\t%s\n", (char *)elem_s->content);
+	printf("\tInt content\t\t%s\n", (char *)elem_s->content);
+
+	printf("\tStr content\t\t%s\n", (char *)elem_i->content);
+	printf("\tInt content\t\t%s\n", (char *)elem_i->content);
 }
