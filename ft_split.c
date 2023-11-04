@@ -40,7 +40,7 @@ static size_t	word_count_f(char const *s, char c)
 		return (word_count = 1);
 	while (s[i])
 	{
-		if ((s[i] != c && s[i - 1] == c) || (s[i] != c && i == 0))
+		if (s[i] != c && (i == 0 || s[i - 1] == c))
 			word_count++;
 		i++;
 	}
@@ -66,9 +66,9 @@ char	**ft_split(char const *s, char c)
 	arr = malloc((word_count_f(s, c) + 1) * sizeof(char *));
 	if (!arr)
 		return (0);
-	while (j < word_count_f(s, c) && s[i])
+	while (s[i] && j < word_count_f(s, c))
 	{
-		if (s[i] != c && (s[i - 1] == c || i == 0))
+		if (s[i] != c && (i == 0 || s[i - 1] == c))
 		{
 			arr[j] = arr_dup(s + i, c);
 			if (!arr[j])
