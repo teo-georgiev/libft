@@ -6,7 +6,7 @@
 #    By: tgeorgie <tgeorgie@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/24 08:19:01 by tgeorgie          #+#    #+#              #
-#    Updated: 2023/11/02 09:45:32 by tgeorgie         ###   ########.fr        #
+#    Updated: 2023/11/06 10:10:10 by tgeorgie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,18 +34,21 @@ CBONUS	=	$(SRC)ft_lstnew_bonus.c $(SRC)ft_lstadd_front_bonus.c \
 			$(SRC)ft_lstclear_bonus.c $(SRC)ft_lstiter_bonus.c \
 			$(SRC)ft_lstmap_bonus.c
 OBONUS	=	$(CBONUS:.c=.o)
+AR		=	ar -rc $(NAME) $(OFILES)
+COMPILE	=	$(CC) $(CFLAGS) $(HEADER) $(CFILES)
 
 $(NAME):
-	$(CC) $(CFLAGS) $(HEADER) $(CFILES)
-	ar -rc $(NAME) $(OFILES)
+	$(COMPILE)
+	$(AR)
 	ranlib $(NAME)
 
 all: $(NAME)
 
 bonus:
-	$(CC) $(CFLAGS) $(HEADER) $(CFILES) $(CBONUS)
-	ar -rc $(NAME) $(OFILES) $(OBONUS)
+	$(COMPILE) $(CBONUS)
+	$(AR) $(OBONUS)
 	ranlib $(NAME)
+
 .PHONY: clean all fclean re bonus
 
 clean:

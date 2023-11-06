@@ -6,27 +6,23 @@
 /*   By: tgeorgie <tgeorgie@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 10:36:44 by tgeorgie          #+#    #+#             */
-/*   Updated: 2023/11/03 16:02:01 by tgeorgie         ###   ########.fr       */
+/*   Updated: 2023/11/06 07:56:00 by tgeorgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_atoi(const char *str)
 {
 	int					i;
 	int					sign;
 	unsigned long long	num;
-	int					result;
 
 	i = 0;
 	num = 0;
 	sign = 1;
 	while ((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
-	{
 		i++;
-	}
 	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
@@ -42,7 +38,5 @@ int	ft_atoi(const char *str)
 		else if (num > 9223372036854775807 && sign == -1)
 			return (0);
 	}
-	//printf("sign\t\t %d\n", sign * (int)num);
-	result = (int)num;
-	return (result * sign);
+	return (sign * (int)num);
 }

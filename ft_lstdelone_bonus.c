@@ -6,7 +6,7 @@
 /*   By: tgeorgie <tgeorgie@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 15:55:36 by tgeorgie          #+#    #+#             */
-/*   Updated: 2023/11/02 08:34:27 by tgeorgie         ###   ########.fr       */
+/*   Updated: 2023/11/06 07:59:50 by tgeorgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	//t_list	*next;
-
-	//next = lst->next;
 	del(lst->content);
 	free(lst);
 }

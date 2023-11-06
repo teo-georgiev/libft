@@ -6,7 +6,7 @@
 /*   By: tgeorgie <tgeorgie@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 09:15:59 by tgeorgie          #+#    #+#             */
-/*   Updated: 2023/10/24 15:36:03 by tgeorgie         ###   ########.fr       */
+/*   Updated: 2023/11/06 07:57:07 by tgeorgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int	ft_isascii(int c)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	return (0);
+	return (c >= 0 && c <= 127);
 }

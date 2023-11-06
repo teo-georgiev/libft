@@ -6,7 +6,7 @@
 /*   By: tgeorgie <tgeorgie@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 11:02:58 by tgeorgie          #+#    #+#             */
-/*   Updated: 2023/10/24 15:36:09 by tgeorgie         ###   ########.fr       */
+/*   Updated: 2023/11/06 07:58:14 by tgeorgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int	ft_isprint(int c)
 {
-	if (c >= 32 && c <= 126)
-		return (1);
-	return (0);
+	return (c >= 32 && c <= 126);
 }

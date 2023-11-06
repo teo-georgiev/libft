@@ -6,12 +6,11 @@
 /*   By: tgeorgie <tgeorgie@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 13:42:09 by tgeorgie          #+#    #+#             */
-/*   Updated: 2023/11/03 09:05:00 by tgeorgie         ###   ########.fr       */
+/*   Updated: 2023/11/06 08:04:15 by tgeorgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static char	*arr_dup(char const *s, char c)
 {

@@ -6,14 +6,11 @@
 /*   By: tgeorgie <tgeorgie@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 12:13:03 by tgeorgie          #+#    #+#             */
-/*   Updated: 2023/10/27 17:23:11 by tgeorgie         ###   ########.fr       */
+/*   Updated: 2023/11/06 08:05:32 by tgeorgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <unistd.h>
-#include <string.h>
 
 char	*ft_strdup(const char *s1)
 {
