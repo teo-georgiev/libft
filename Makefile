@@ -6,7 +6,7 @@
 #    By: tgeorgie <tgeorgie@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/24 08:19:01 by tgeorgie          #+#    #+#              #
-#    Updated: 2023/11/06 10:10:10 by tgeorgie         ###   ########.fr        #
+#    Updated: 2023/11/06 12:44:51 by tgeorgie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,7 +44,9 @@ $(NAME):
 
 all: $(NAME)
 
-bonus:
+bonus: $(OBONUS)
+
+$(OBONUS):
 	$(COMPILE) $(CBONUS)
 	$(AR) $(OBONUS)
 	ranlib $(NAME)
