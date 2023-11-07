@@ -6,7 +6,7 @@
 #    By: tgeorgie <tgeorgie@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/24 08:19:01 by tgeorgie          #+#    #+#              #
-#    Updated: 2023/11/06 12:44:51 by tgeorgie         ###   ########.fr        #
+#    Updated: 2023/11/07 09:47:18 by tgeorgie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,14 +42,14 @@ $(NAME):
 	$(AR)
 	ranlib $(NAME)
 
-all: $(NAME)
-
-bonus: $(OBONUS)
-
 $(OBONUS):
 	$(COMPILE) $(CBONUS)
 	$(AR) $(OBONUS)
 	ranlib $(NAME)
+
+all: $(NAME)
+
+bonus: $(OBONUS)
 
 .PHONY: clean all fclean re bonus
 
