@@ -6,7 +6,7 @@
 /*   By: tgeorgie <tgeorgie@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 13:42:09 by tgeorgie          #+#    #+#             */
-/*   Updated: 2023/11/07 09:53:03 by tgeorgie         ###   ########.fr       */
+/*   Updated: 2023/11/08 10:39:12 by tgeorgie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,11 @@ static size_t	word_count_f(char const *s, char c)
 static int	arr_free(char **arr, size_t j)
 {
 	while (j > 0)
-		free(arr[j--]);
+	{
+		j--;
+		free(arr[j]);
+		arr[j] = (void *)0;
+	}
 	free(arr);
 	return (0);
 }
