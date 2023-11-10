@@ -6,7 +6,7 @@
 #    By: tgeorgie <tgeorgie@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/24 08:19:01 by tgeorgie          #+#    #+#              #
-#    Updated: 2023/11/07 17:11:46 by tgeorgie         ###   ########.fr        #
+#    Updated: 2023/11/10 10:07:01 by tgeorgie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,7 @@ all: $(NAME)
 
 bonus: .bonus 
 
-.bonus: $(OFILES) $(OBONUS)
+.bonus: $(OBONUS)
 	$(AR) $(NAME) $^ 
 	ranlib $(NAME)
 	@touch .bonus
